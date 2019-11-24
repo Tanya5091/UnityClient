@@ -1,13 +1,9 @@
-﻿using System.Threading.Tasks;
-using Assets.Scripts.Models;
+﻿using Assets.Scripts.Models;
 using UnityEngine;
 using UnityEngine.UI;
 using Assets.Scripts.Manager;
-using Assets.Scripts.Server;
+using Server;
 using System.Text;
-using UnityEngine.SceneManagement;
-using System.Collections.Generic;
-using System.Collections;
 using System.Threading;
 
 namespace Assets.Scripts
@@ -75,11 +71,6 @@ namespace Assets.Scripts
 					//text = "Saved Successfully";
 					break;
 			}
-		}
-
-		private void OnDestroy()
-		{
-			Connect.Instance.GetComponent<TcpClient>().OnMessage -= OnMessage;
 		}
 
 		private static byte[] MessageFactory(MessageType type, byte[] value)

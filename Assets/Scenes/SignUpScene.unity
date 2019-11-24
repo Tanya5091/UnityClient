@@ -242,6 +242,16 @@ PrefabInstance:
       propertyPath: m_Text
       value: Enter password...
       objectReference: {fileID: 0}
+    - target: {fileID: 2062624799390460612, guid: 08bed459b73ec6645ba8df2b8561d9ce,
+        type: 3}
+      propertyPath: m_ContentType
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2062624799390460612, guid: 08bed459b73ec6645ba8df2b8561d9ce,
+        type: 3}
+      propertyPath: m_InputType
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08bed459b73ec6645ba8df2b8561d9ce, type: 3}
 --- !u!1001 &10870118

@@ -9,7 +9,6 @@ namespace Assets.Scripts
 	public class FillEntries : MonoBehaviour
 	{
 		public GameObject myPrefab;
-
 		public static ArrayList queue;
 		// Start is called before the first frame update
 		void Start()
@@ -28,7 +27,6 @@ namespace Assets.Scripts
 			}
 	
 		}
-
 		// Update is called once per frame
 		void Update()
 		{

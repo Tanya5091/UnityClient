@@ -849,18 +849,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1551899787}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1551899789 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7368651546559739484, guid: 2c5eb4cc0670d614aa96105b3688852b,
-    type: 3}
-  m_PrefabInstance: {fileID: 1551899787}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1551899788}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1551899790
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -873,7 +861,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ebd5af4ed0bd8d4f828d0e6b1770a6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  signInButton: {fileID: 1551899789}
   scene: HistoryScene
 --- !u!1 &1583151591
 GameObject:
@@ -1482,19 +1469,7 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1998039870}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1998039872 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5036846846177556459, guid: c1e3beb8748ed0b46ac7cf401f0260bc,
-    type: 3}
-  m_PrefabInstance: {fileID: 1998039870}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1998039871}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1998039873
+--- !u!114 &1998039872
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1503,10 +1478,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1998039871}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1ebd5af4ed0bd8d4f828d0e6b1770a6b, type: 3}
+  m_Script: {fileID: 11500000, guid: 55b8dceccf87d4e1abf7e45b53eadae2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  signInButton: {fileID: 1998039872}
   scene: WelcomeScene
 --- !u!1001 &6689687717111237335
 PrefabInstance:
