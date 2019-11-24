@@ -41,7 +41,7 @@ namespace Assets.Scripts
 			if (transliterateThread != null && !threadRunning)
 			{
 				ouf.text = res;
-				Connect.Instance.GetComponent<TcpClient>().SendingMessage(MessageFactory(MessageType.SaveRequest, Encoding.ASCII.GetBytes($"{src};{res}")));
+				Connect.Instance.GetComponent<TcpClient>().SendingMessage(MessageFactory(MessageType.SaveRequest, Encoding.UTF8.GetBytes($"{src};{res}")));
 				res = "";
 				inf.readOnly = false;
 				transliterateThread.Join();
