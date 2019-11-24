@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using System.Collections.Generic;
 using Assets.Scripts.Manager;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -9,6 +10,8 @@ namespace Assets.Scripts
 	public class Connect : MonoBehaviour
 	{
 		private TcpClient client;
+
+		public static List<string> q;
 		//private Text log;
 		public Text text;
 		private string str = "";
@@ -19,6 +22,7 @@ namespace Assets.Scripts
 
 		void Awake()
 		{
+			q=new List<string>();
 			Instance = this;
 			DontDestroyOnLoad(this);
 		}

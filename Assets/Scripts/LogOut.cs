@@ -17,6 +17,7 @@ public class LogOut : MonoBehaviour
     void TaskOnClick()
     {
         Connect.History.Clear();
+		Connect.q.Clear();
 	    SceneManager.LoadScene(scene);
     }
 }

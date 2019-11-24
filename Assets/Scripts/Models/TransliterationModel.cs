@@ -31,6 +31,7 @@ using System.Collections.Generic;
 					else if (transliterationTemplate.ContainsKey(Char.ToUpper(str[i])))
 					{
 						string c = transliterationTemplate[Char.ToUpper(str[i])];
+						if(c.Length>0)
 						res += (Char.ToLower(c[0]) + c.Substring(1));
 					}
 					else

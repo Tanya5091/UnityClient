@@ -42,6 +42,9 @@ namespace Assets.Scripts
 			{
 				ouf.text = res;
 				Connect.Instance.GetComponent<TcpClient>().SendingMessage(MessageFactory(MessageType.SaveRequest, Encoding.Unicode.GetBytes($"{src};{res}")));
+				Connect.q.Add(src);
+				Connect.q.Add(res);
+				Connect.q.Add(System.DateTime.Today.ToShortDateString());
 				res = "";
 				inf.readOnly = false;
 				transliterateThread.Join();
