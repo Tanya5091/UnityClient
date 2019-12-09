@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Server
+namespace Assets.Scripts.Server
 {
 	public class Message
 	{
@@ -29,6 +29,9 @@ namespace Server
 		LoginRequest,
 		LoginSuccessful,
 		LoginUnsuccessful,
+		SignUpRequest,
+		SignUpSuccessful,
+		SignUpUnsuccessful,
 		SaveRequest,
 		SaveSuccessful,
 		SaveUnsuccessful

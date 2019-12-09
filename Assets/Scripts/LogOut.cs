@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class LogOut : MonoBehaviour
 {
-	public string scene;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,6 +17,6 @@ public class LogOut : MonoBehaviour
     {
         Connect.History.Clear();
 		Connect.q.Clear();
-	    SceneManager.LoadScene(scene);
+	    SceneManager.LoadScene("WelcomeScene");
     }
 }

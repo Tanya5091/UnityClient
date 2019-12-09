@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using Assets.Scripts.Manager;
+
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -10,7 +11,6 @@ namespace Assets.Scripts
 	public class Connect : MonoBehaviour
 	{
 		private TcpClient client;
-
 		public static List<string> q;
 		//private Text log;
 		public Text text;

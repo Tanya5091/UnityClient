@@ -2,14 +2,15 @@
 using UnityEngine;
 using UnityEngine.UI;
 using Assets.Scripts.Manager;
-using Server;
 using System.Text;
 using System.Threading;
+using Assets.Scripts.Server;
 
 namespace Assets.Scripts
 {
 	public class ProcessInput : MonoBehaviour
 	{
+		public GameObject g;
 		public Button signInButton;
 		public InputField inf;
 		public InputField ouf;
@@ -34,12 +35,16 @@ namespace Assets.Scripts
 		{
 			if (inf.readOnly && transliterateThread == null)
 			{
+				g.transform.localScale = new Vector3(1, 1, 1);
 				transliterateThread = new Thread(InitiateTransliteration);
 				threadRunning = true;
 				transliterateThread.Start();
+
 			}
 			if (transliterateThread != null && !threadRunning)
 			{
+
+				g.transform.localScale = new Vector3(0, 0, 0);
 				ouf.text = res;
 				Connect.Instance.GetComponent<TcpClient>().SendingMessage(MessageFactory(MessageType.SaveRequest, Encoding.Unicode.GetBytes($"{src};{res}")));
 				Connect.q.Add(src);
@@ -54,8 +59,10 @@ namespace Assets.Scripts
 
 		private void InitiateTransliteration()
 		{
+			
 			res = TransliterationModel.Transliterate(src);
 			threadRunning = false;
+			Thread.Sleep(300);
 		}
 
 		// Update is called once per frame
